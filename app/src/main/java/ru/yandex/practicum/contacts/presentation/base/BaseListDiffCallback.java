@@ -3,10 +3,10 @@ package ru.yandex.practicum.contacts.presentation.base;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 
-import ru.yandex.practicum.contacts.presentation.sort.SortTypeUI;
 
 
-public class BaseListDiffCallback<T extends ListDiffInterface<Object>> extends DiffUtil.ItemCallback<T> {
+
+public class BaseListDiffCallback<T extends ListDiffInterface<ListDiffInterface>> extends DiffUtil.ItemCallback<T> {
 
 
     @Override
